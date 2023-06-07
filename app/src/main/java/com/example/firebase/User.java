@@ -1,16 +1,16 @@
 package com.example.firebase;
 
 public class User {
-    private String phone;
+    private String email;
     private String fullName;
     private String password;
 
     public User() {
-        // Default constructor required for Firebase
+
     }
 
-    public User(String phone, String fullName, String password) {
-        this.phone = phone;
+    public User(String email, String fullName, String password) {
+        this.email = email;
         this.fullName = fullName;
         this.password = password;
     }
@@ -18,12 +18,12 @@ public class User {
     public User(String fullNameTxt, String passwordTxt) {
     }
 
-    public String getPhone() {
-        return phone;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setEmail(String phone) {
+        this.email = email;
     }
 
     public String getFullName() {

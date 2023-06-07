@@ -57,7 +57,7 @@ public class Register extends AppCompatActivity {
         }
 
         // Create a User object with the user details
-        User user = new User(email, password, fullName);
+        User user = new User(email, fullName,password);
 
         // Save the user object to the database using the phone number as the key
         usersReference.child(phone).setValue(user);
