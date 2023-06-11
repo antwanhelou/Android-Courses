@@ -23,7 +23,7 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        Intent intent=getIntent();
+        Intent intent = getIntent();
         // Initialize database reference
         usersReference = FirebaseDatabase.getInstance().getReference().child("users");
 
@@ -65,6 +65,7 @@ public class Register extends AppCompatActivity {
         // Show a success message
         Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(Register.this, MainActivity.class));
+
         // Clear the EditText fields
         phoneEditText.setText("");
         emailEditText.setText("");

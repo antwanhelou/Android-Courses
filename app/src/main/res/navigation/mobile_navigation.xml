@@ -27,4 +27,9 @@
         android:name="com.example.firebase.ui.Courses.Courses"
         android:label="courses"
         tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.firebase.ui.shop.shopFragment"
+        android:label="@string/menu_Shop"
+        tools:layout="@layout/fragment_shop" />
 </navigation>
