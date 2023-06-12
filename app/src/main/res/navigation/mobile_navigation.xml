@@ -32,4 +32,8 @@
         android:name="com.example.firebase.ui.shop.shopFragment"
         android:label="@string/menu_Shop"
         tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.firebase.ui.Cart.CartFragment"
+        android:title="Cart" />
 </navigation>

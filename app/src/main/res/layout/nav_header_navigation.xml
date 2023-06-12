@@ -26,4 +26,12 @@
         android:textColor="@android:color/white"
         tools:text="Phone Number" />
 
+
+    <Button
+        android:id="@+id/buttonCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart"
+        android:layout_marginTop="8dp" />
+
 </LinearLayout>
