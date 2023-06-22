@@ -53,7 +53,7 @@ public class shopFragment extends Fragment {
                 productList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Shop product = snapshot.getValue(Shop.class);
-                    if (product != null) {
+                    if (product != null && product.getQuantity() > 0) {
                         product.setId(snapshot.getKey());
                         productList.add(product);
                     }

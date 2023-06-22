@@ -27,7 +27,7 @@
             android:title="Courses" />
         <item
             android:id="@+id/cart"
-            android:icon="@drawable/baseline_calendar_view_month_24"
-            android:title="Courses" />
+            android:icon="@drawable/cart"
+            android:title="Cart" />
     </group>
 </menu>
