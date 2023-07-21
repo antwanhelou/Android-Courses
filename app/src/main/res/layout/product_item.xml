@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -49,8 +50,9 @@
         android:id="@+id/buttonAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add to Cart"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp" />
+        android:paddingEnd="16dp"
+        android:text="Add to Cart"
+        tools:ignore="TextSizeCheck" />
 
 </LinearLayout>

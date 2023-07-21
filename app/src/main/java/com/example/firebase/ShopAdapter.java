@@ -84,6 +84,7 @@ public class ShopAdapter extends ArrayAdapter<Shop> {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Shop existingItem = snapshot.getValue(Shop.class);
                             if (existingItem != null && snapshot.getKey() != null && snapshot.getKey().equals(currentProduct.getId())) {
+                                Toast.makeText(ShopAdapter.this.getContext(), "Product added to cart", Toast.LENGTH_LONG).show();
                                 // Product exists in cart, so increment quantity
                                 int quantity = existingItem.getQuantity();
                                 existingItem.setQuantity(quantity + 1);
@@ -94,6 +95,7 @@ public class ShopAdapter extends ArrayAdapter<Shop> {
                         }
 
                         if (!isProductInCart) {
+                            Toast.makeText(ShopAdapter.this.getContext(), "Product added to cart", Toast.LENGTH_LONG).show();
                             // Product doesn't exist in cart, so add it
                             Shop newItem = new Shop();
                             newItem.setId(currentProduct.getId());
